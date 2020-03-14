@@ -13,7 +13,7 @@ exist_file()
     files=$(ls $path)
     for filename in $files
     do
-        if [ $filename == 'pom.xml' -o $filename == 'package.json' ]
+        if [ $filename == 'pom.xml' -o $filename == 'package.json' -o $filename == '.gitkeep' -o $filename == '.gitignore' ]
         then
             return 1
         fi
